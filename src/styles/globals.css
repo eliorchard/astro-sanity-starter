@@ -1,30 +1,98 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
 
-@layer components {
-    .markdown {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            @apply font-black;
-        }
-        a {
-            @apply underline transition hover:decoration-primary;
-        }
-        > p,
-        > ul,
-        > ol {
-            @apply my-4;
-        }
-        > :first-child {
-            @apply mt-0;
-        }
-        > :last-child {
-            @apply mb-0;
-        }
-    }
+a {
+    color: #f3c718;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #b7312c; /* Deep red color */
+    color: #f3c718; /* Gold color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    height: 60px;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h1 span {
+    font-size: 18px;
+    display: block;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #f3c718;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(243, 199, 24, 0.2); /* Light gold background on hover */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #b7312c;
+    border-bottom: 2px solid #b7312c;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #b7312c; /* Deep red color */
+    color: #f3c718; /* Gold color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
